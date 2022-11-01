@@ -17,5 +17,23 @@ def __init__(self, nama, makan):
 
 ```
 </p>
+Dalam kasus <b> class hewan() </b>, setiap hewan memiliki nama dan makan tertentu, yang jelas penting untuk diketahui ketika Anda mulai benar-benar menciptakan hewan yang berbeda. Ingat: <b> "kelas hanya untuk mendefinisikan hewan, tidak benar-benar membuat turunan hewan individu dengan nama dan makan tertentu". </b> </p>
 
+<b> Class Attributes </b> </p>
+Atribut instance spesifik untuk setiap objek, atribut class adalah sama untuk semua instance — yang dalam hal ini adalah semua kucing. Perhatikan kode di bawah ini : </p>
+
+```python
+class hewan:
+  def __init__(self, nama, makan):
+        self.nama = nama
+        self.makan = makan
+
+  def berjalan (self):
+    print('hewan' , self.nama , 'dengan makan' , self.makan , 'hewan sedang berjalan')
+    
+  def tidur (self):
+    print('hewan' , self.nama , 'dengan makan' , self.makan , 'hewan sedang tidur')
+
+```
+</p>
 
